@@ -17,7 +17,7 @@ const open = () => {
         document.getElementById("myAudio").muted = false;
         console.log(document.getElementById("myAudio").muted);
         document.getElementById("myAudio").play();
-    }, 100);
+    }, 1000);
 }
 
 document.onload = open()
