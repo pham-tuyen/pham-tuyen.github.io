@@ -12,12 +12,17 @@ if(d.getMonth() == 2) {
             brname = "một thằng nào đó";
     }
 }
+
+
 const open = () => {
     setTimeout(() => {
-        document.getElementById("myAudio").muted = false;
+        const video = document.getElementById("myAudio");
+        .muted = false;
         console.log(document.getElementById("myAudio").muted);
-        document.getElementById("myAudio").play();
-    }, 1000);
+        if(!video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2) video.play();
+        if(!video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2) video.play();
+        if(!video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2) video.play();
+    }, 500);
 }
 
 document.onload = open()
