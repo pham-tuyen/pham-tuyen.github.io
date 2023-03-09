@@ -13,16 +13,16 @@ if(d.getMonth() == 2) {
     }
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 const open = () => {
-    setTimeout(() => {
-        const video = document.getElementById("myAudio");
-        video.muted = false;
-        console.log(document.getElementById("myAudio").muted);
-        if(!video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2) video.play();
-        if(!video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2) video.play();
-        if(!video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2) video.play();
-    }, 500);
+    sleep(500);
+    const video = document.getElementById("myAudio");
+    video.muted = false;
+    console.log(document.getElementById("myAudio").muted);
+    if(!video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2) video.play();
 }
 
 document.onload = open()
