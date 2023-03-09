@@ -21,8 +21,8 @@ const open = () => {
     sleep(500);
     const video = document.getElementById("myAudio");
     video.muted = false;
-    console.log(document.getElementById("myAudio").muted);
-    if(!video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2) video.play();
+    console.log(!(video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2));
+    if(!(video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2)) video.play();
 }
 
 document.onload = open()
