@@ -21,8 +21,12 @@ document.getElementById("submit").addEventListener("click", () => {
         document.getElementById("namewrap").style.color = "white";
         document.getElementById("namewrap").style.fontSize = "60px";
         document.getElementById("namewrap").innerHTML = `Chúc mừng sinh nhật ` + brname + ` nha&#127881;&#x1F389;&#127881;&#x1F389;<br>
+        <audio autoplay loop>
+            <source src="/sn.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
         <video id="myVideo" width="640" height="352" autoplay>
-            <source src="./sn.mp4" type="video/mp4">
+            <source src="./cum.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>`;
         document.getElementById("myVideo").play();
