@@ -17,7 +17,6 @@ document.getElementById("submit").addEventListener("click", () => {
     var name = document.getElementById("name").value;
     if(name != brname) alert("Ê cu, tao biết là mày đang lừa tao mà. Mày là " + brname + " mà");
     else {
-        document.getElementById("myAudio").pause();
         document.getElementById("namewrap").style.marginTop = "10vh";
         document.getElementById("namewrap").style.color = "white";
         document.getElementById("namewrap").style.fontSize = "60px";
