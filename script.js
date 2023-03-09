@@ -25,7 +25,7 @@ document.getElementById("submit").addEventListener("click", () => {
             <source src="/sn.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <video id="myVideo" width="640" height="352" autoplay>
+        <video id="myVideo" width="640" height="352" autoplay loop muted>
             <source src="./cum.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>`;
