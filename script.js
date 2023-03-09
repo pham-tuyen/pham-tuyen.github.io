@@ -17,7 +17,7 @@ if(d.getMonth() == 2) {
 const open = () => {
     setTimeout(() => {
         const video = document.getElementById("myAudio");
-        .muted = false;
+        video.muted = false;
         console.log(document.getElementById("myAudio").muted);
         if(!video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2) video.play();
         if(!video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2) video.play();
