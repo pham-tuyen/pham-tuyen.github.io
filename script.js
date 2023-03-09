@@ -23,7 +23,7 @@ document.getElementById("submit").addEventListener("click", () => {
         document.getElementById("namewrap").style.fontSize = "60px";
         document.getElementById("namewrap").innerHTML = `Chúc mừng sinh nhật ` + brname + ` nha&#127881;&#x1F389;&#127881;&#x1F389;<br>
         <video id="myVideo" width="640" height="352" autoplay>
-            <source src="./rr.mp4" type="video/mp4">
+            <source src="./sn.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>`;
         document.getElementById("myVideo").play();
