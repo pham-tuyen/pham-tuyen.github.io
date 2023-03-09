@@ -22,7 +22,7 @@ const open = () => {
     const video = document.getElementById("myAudio");
     video.muted = false;
     console.log(!(video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2));
-    if(!(video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2)) video.play();
+    while(!(video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2)) video.play();
 }
 
 document.onload = open()
