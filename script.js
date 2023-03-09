@@ -13,20 +13,6 @@ if(d.getMonth() == 2) {
     }
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-const open = () => {
-    sleep(500);
-    const video = document.getElementById("myAudio");
-    video.muted = false;
-    console.log(!(video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2));
-    while(!(video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2)) video.play();
-}
-
-document.onload = open()
-
 document.getElementById("submit").addEventListener("click", () => {
     var name = document.getElementById("name").value;
     if(name != brname) alert("Ê cu, tao biết là mày đang lừa tao mà. Mày là " + brname + " mà");
